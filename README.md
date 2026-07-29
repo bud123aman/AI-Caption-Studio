@@ -2,6 +2,12 @@
 
 A full-stack AI-powered video captioning tool. Upload a video, auto-generate captions using Whisper (with Hinglish support), customize caption style, remove silences, and export a captioned MP4.
 
+## Project Demo
+
+<a href="https://drive.google.com/file/d/1g3pHQtR9ZnhQoaCaCoYNTNOO5m8cUxmE/view?usp=sharing">
+  <img width="882" alt="Project Walkthrough Video" src="https://drive.google.com/file/d/1u-TOFkup0tZf6nxluhsn49jKStBMRGQd/view?usp=sharing">
+</a>
+
 ---
 
 ## Stack
