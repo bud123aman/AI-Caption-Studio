@@ -1,0 +1,57 @@
+.step-nav {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.step-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 14px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 500;
+  transition: color 0.15s, background 0.15s;
+  white-space: nowrap;
+}
+
+.step-btn:not(.locked):hover {
+  color: var(--text-primary);
+  background: var(--bg-hover);
+}
+
+.step-btn.active {
+  color: var(--accent);
+  background: var(--accent-dim);
+}
+
+.step-btn.done {
+  color: var(--success);
+}
+
+.step-btn.locked {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.step-icon {
+  font-size: 15px;
+  width: 18px;
+  text-align: center;
+}
+
+.step-connector {
+  width: 24px;
+  height: 1px;
+  background: var(--border);
+  flex-shrink: 0;
+  transition: background 0.3s;
+}
+
+.step-connector.filled {
+  background: var(--accent);
+}

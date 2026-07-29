@@ -1,0 +1,197 @@
+.export-step {
+  display: flex;
+  gap: 40px;
+  padding: 32px 40px;
+  height: 100%;
+  overflow-y: auto;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.export-config {
+  flex: 0 0 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.export-heading {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.export-info-banner {
+  background: rgba(52,211,153,0.1);
+  border: 1px solid var(--success);
+  color: var(--success);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-size: 13px;
+}
+
+.export-group { display: flex; flex-direction: column; gap: 12px; }
+
+.group-title {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--text-secondary);
+}
+
+.ratio-cards {
+  display: flex;
+  gap: 12px;
+}
+
+.ratio-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 16px 12px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.ratio-card:hover { border-color: var(--accent); }
+.ratio-card.active { border-color: var(--accent); background: var(--accent-dim); }
+
+.ratio-icon { font-size: 24px; }
+.ratio-label { font-size: 13px; font-weight: 500; }
+
+.res-cards { display: flex; gap: 12px; }
+
+.res-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.15s;
+  text-align: left;
+}
+
+.res-card:hover { border-color: var(--accent); }
+.res-card.active { border-color: var(--accent); background: var(--accent-dim); }
+
+.res-label { font-size: 14px; font-weight: 600; }
+.res-desc { font-size: 11px; color: var(--text-secondary); }
+
+.subtitle-row { display: flex; gap: 10px; }
+
+.btn-outline-sm {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  padding: 7px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.btn-outline-sm:hover { border-color: var(--accent); color: var(--accent); }
+.btn-outline-sm:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.download-link {
+  font-size: 12px;
+  color: var(--accent);
+}
+
+.export-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+  margin-top: 4px;
+}
+
+.export-btn:hover { background: var(--accent-hover); }
+.export-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.error-box {
+  background: rgba(248,113,113,0.1);
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-size: 13px;
+}
+
+.btn-spinner {
+  display: inline-block;
+  width: 16px; height: 16px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+/* Result panel */
+.export-result {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.result-heading {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--success);
+}
+
+.result-meta { font-size: 13px; color: var(--text-secondary); }
+
+.result-video {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  background: #000;
+  border-radius: var(--radius-lg);
+  display: block;
+}
+
+.result-actions { display: flex; gap: 12px; }
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.download-btn:hover { background: var(--accent-hover); color: #fff; }
+.download-btn.secondary { background: var(--bg-surface); border: 1px solid var(--border); color: var(--text-primary); }
+.download-btn.secondary:hover { background: var(--bg-hover); color: var(--text-primary); }
+
+@keyframes spin { to { transform: rotate(360deg); } }
